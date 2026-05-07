@@ -1,0 +1,11 @@
+# Reading C:/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
+# Loading project lab4
+# Load canceled
+# Compile of Ex2_martyniuk_OR.v was successful.
+# Compile of Ex2_martyniuk_OR.v was successful.
+vsim work.Ex2_OR
+# vsim work.Ex2_OR 
+# Loading work.Ex2_OR
+do C:/altera/91/modelsim_ase/examples/Stimul.do
+add wave sim:/Ex2_OR/*
+run 200ns
