@@ -1,1 +1,42 @@
+# Reading C:/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
+# Loading project my_project
+# Compile of half_add_lab1.v was successful.
+vsim -t ps work.half_add
+# vsim -t ps work.half_add 
+# Loading work.half_add
+add wave sim:/half_add/*
+run 100ns
+add wave sim:/half_add/*
+qiut -sim
+# invalid command name "qiut"
+quit -sim
+# reading C:\altera\91\modelsim_ase\win32aloem/../modelsim.ini
+# Loading project martyniuk_lab3
+# Compile of half_add_lab1.v was successful.
+# Compile of half_add_lab1.v was successful.
+# Load canceled
+vsim -t ps work.half_add
+# vsim -t ps work.half_add 
+# Loading work.half_add
+do D:/Stim.do
+add wave sim:/half_add/*
+run 100ns
+restart -forse
+do D:\Stim.do
+run 80ns
+do Stim.do
+# Cannot open macro file: Stim.do
+quit -sim
+# Compile of half_add_lab1.v was successful.
+vsim -t ps work.half_add
+# vsim -t ps work.half_add 
+# Loading work.half_add
+do D:/Stim.do
+run 80ns
+add wave sim:/half_add/*
+run 80ns
+restart -forse
+run 80ns
+
+
 
