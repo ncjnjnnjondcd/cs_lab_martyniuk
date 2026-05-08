@@ -1,0 +1,34 @@
+
+delete wave *
+add wave -position insertpoint sim:/demulty/*
+
+
+force -freeze sim:/demulty/data_in 4'hA 0
+
+
+force -freeze sim:/demulty/sel 3'h0 0
+run 50ns
+
+force -freeze sim:/demulty/sel 3'h1 0
+run 50ns
+
+force -freeze sim:/demulty/sel 3'h2 0
+run 50ns
+
+force -freeze sim:/demulty/sel 3'h3 0
+run 50ns
+
+force -freeze sim:/demulty/sel 3'h4 0
+run 50ns
+
+force -freeze sim:/demulty/sel 3'h5 0
+run 50ns
+
+force -freeze sim:/demulty/sel 3'h6 0
+run 50ns
+
+force -freeze sim:/demulty/sel 3'h7 0
+run 50ns
+
+
+wave zoom full

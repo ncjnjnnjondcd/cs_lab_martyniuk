@@ -1,0 +1,17 @@
+# Reading C:/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
+# Loading project lab5_martyniuk
+# Compile of demulty.v was successful.
+# Compile of demulty.v was successful.
+vsim work.demulty
+# vsim work.demulty 
+# Loading work.demulty
+do C:/altera/91/modelsim_ase/examples/Stimul.do
+# 0 ps
+# 420 ns
+run 400ns
+restart -f
+do Stim.do
+# Cannot open macro file: Stim.do
+do Stimul.do
+# 0 ps
+# 420 ns
