@@ -1,0 +1,31 @@
+
+`timescale 1ns / 1ps
+
+module test_sum6;
+    reg [5:0] Ain_r, Bin_r;
+    reg Ci_r;
+    wire [5:0] res_my, res_ref;
+    wire co_my, co_ref;
+
+    
+    sum6bit my_block (Ain_r, Bin_r, Ci_r, res_my, co_my);
+
+    
+    assign {co_ref, res_ref} = Ain_r + Bin_r + Ci_r;
+
+    initial begin
+        $display("Time\t Ain\t Bin\t Ci\t My_Res\t Ref_Res");
+        
+        $monitor("%0t\t %d\t %d\t %b\t %d\t %d", $time, Ain_r, Bin_r, Ci_r, res_my, res_ref);
+        
+        
+        Ain_r = 10; Bin_r = 20; Ci_r = 0;
+        
+        
+        #50 Ain_r = 63; Bin_r = 1;  Ci_r = 0; 
+        #50 Ain_r = 32; Bin_r = 32; Ci_r = 1;
+        
+        
+        #100 $finish;
+    end
+endmodule

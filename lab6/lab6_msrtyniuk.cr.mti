@@ -1,0 +1,22 @@
+C:/altera/91/modelsim_ase/examples/bitsum.v {1 {vlog -work work -nocovercells C:/altera/91/modelsim_ase/examples/bitsum.v
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling module bitsum
+
+Top level modules:
+	bitsum
+
+} {} {}} C:/altera/91/modelsim_ase/examples/test_sum6.v {1 {vlog -work work -nocovercells C:/altera/91/modelsim_ase/examples/test_sum6.v
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling module test_sum6
+
+Top level modules:
+	test_sum6
+
+} {} {}} C:/altera/91/modelsim_ase/examples/sum6bit.v {1 {vlog -work work -nocovercells C:/altera/91/modelsim_ase/examples/sum6bit.v
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling module sum6bit
+
+Top level modules:
+	sum6bit
+
+} {} {}}

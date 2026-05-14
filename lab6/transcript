@@ -1,0 +1,41 @@
+# Reading C:/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
+# Loading project lab6_msrtyniuk
+# Compile of bitsum.v was successful.
+# Compile of sum6bit.v was successful.
+# Compile of test_sum6.v was successful.
+# 3 compiles, 0 failed with no errors. 
+vsim work.test_sum6
+# vsim work.test_sum6 
+# Loading work.test_sum6
+# Loading work.sum6bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'sum6bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /test_sum6/my_block
+# Loading work.bitsum
+# ** Warning: (vsim-3009) [TSCALE] - Module 'bitsum' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /test_sum6/my_block/b0
+add wave sim:/test_sum6/*
+run 400ns
+# Time	 Ain	 Bin	 Ci	 My_Res	 Ref_Res
+# 0	 10	 20	 0	 30	 30
+# 50000	 63	  1	 0	  0	  0
+# 100000	 32	 32	 1	  1	  1
+# ** Note: $finish    : C:/altera/91/modelsim_ase/examples/test_sum6.v(29)
+#    Time: 200 ns  Iteration: 0  Instance: /test_sum6
+# 1
+# Break in Module test_sum6 at C:/altera/91/modelsim_ase/examples/test_sum6.v line 29
+refresh -f
+# invalid command name "refresh"
+restart -f
+# ** Warning: (vsim-3009) [TSCALE] - Module 'sum6bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /test_sum6/my_block
+# ** Warning: (vsim-3009) [TSCALE] - Module 'bitsum' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /test_sum6/my_block/b0
+run -all
+# Time	 Ain	 Bin	 Ci	 My_Res	 Ref_Res
+# 0	 10	 20	 0	 30	 30
+# 50000	 63	  1	 0	  0	  0
+# 100000	 32	 32	 1	  1	  1
+# ** Note: $finish    : C:/altera/91/modelsim_ase/examples/test_sum6.v(29)
+#    Time: 200 ns  Iteration: 0  Instance: /test_sum6
+# 1
+# Break in Module test_sum6 at C:/altera/91/modelsim_ase/examples/test_sum6.v line 29
